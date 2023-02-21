@@ -28,13 +28,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-               float buyPrice,sellPrice,profit;
+               float buyPrice,sellPrice,profit,profitpercentage;
                buyPrice=Float.parseFloat(edBuy.getText().toString());
                sellPrice=Float.parseFloat(edSell.getText().toString());
 
                profit=sellPrice-buyPrice;
+               profitpercentage=profit/buyPrice*100;
 
-               tvOutput.setText("Profit is  " + profit);
+               tvOutput.setText("Profit is  " + profit+"\nProfit Percentage is: "+profitpercentage+"%");
+
             }
         });
 
