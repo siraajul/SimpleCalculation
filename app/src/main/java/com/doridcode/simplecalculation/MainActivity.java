@@ -10,12 +10,19 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-
+    EditText edBuy,edSell;
+    Button btnCalculate;
+    TextView tvOutput
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        edBuy=findViewById(R.id.edBuy);
+        edSell=findViewById(R.id.edSell);
+        btnCalculate=findViewById(R.id.btnCalculate);
+        tvOutput=findViewById(R.id.tvOutput);
 
     }
 }

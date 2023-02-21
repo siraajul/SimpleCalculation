@@ -10,6 +10,47 @@
     >
 
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whats Your Buying Price ? "
+        android:textSize="20sp"/>
 
+    <EditText
+        android:id="@+id/edBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Enter Buying Price" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Whats Your Selling Price ?"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/edSell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="20"
+        android:inputType="numberDecimal"
+        android:hint="Enter Selling Price ? " />
+    
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate" />
+    
+    <TextView
+        android:id="@+id/tvOutput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
 </LinearLayout>
