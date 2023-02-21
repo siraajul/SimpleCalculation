@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     EditText edBuy,edSell;
     Button btnCalculate;
-    TextView tvOutput
+    TextView tvOutput;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,20 @@ public class MainActivity extends AppCompatActivity {
         edSell=findViewById(R.id.edSell);
         btnCalculate=findViewById(R.id.btnCalculate);
         tvOutput=findViewById(R.id.tvOutput);
+
+        btnCalculate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+               float buyPrice,sellPrice,profit;
+               buyPrice=Float.parseFloat(edBuy.getText().toString());
+               sellPrice=Float.parseFloat(edSell.getText().toString());
+
+               profit=sellPrice-buyPrice;
+
+               tvOutput.setText("Profit is  " + profit);
+            }
+        });
 
     }
 }
