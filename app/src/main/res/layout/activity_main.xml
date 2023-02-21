@@ -6,41 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
+    android:layout_margin="10dp"
     >
 
-    <TextView
-        android:id="@+id/ask"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Whats Your Name?"
-        />
 
-
-    <EditText 
-        android:id="@+id/entername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Enter Your Name"
-        android:inputType="textPersonName"
-        android:padding="10dp"
-        />
-
-    <Button
-        android:id="@+id/outputbutton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Click Here to See the Magic ! "
-        />
-
-    <TextView
-        android:id="@+id/output"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="30dp"
-        />
 
 
 </LinearLayout>
